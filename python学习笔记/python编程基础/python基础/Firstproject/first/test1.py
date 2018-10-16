@@ -9,5 +9,4 @@ print(a)
 print(b)
 print(c)
 print(d)
-print(time.localtime().__doc__)
 
