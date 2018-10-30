@@ -1,6 +1,6 @@
 def sign(spam):
     spam.insert(-1,'and')
-spam = ['a','b','c','d']
+spam =  ['apples', 'bananas', 'tofu', 'cats']
 sign(spam)
 ll = len(spam)
 for i in range(ll):
