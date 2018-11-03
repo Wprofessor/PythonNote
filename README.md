@@ -1,4 +1,5 @@
-# PythonNote python学习笔记
+# PythonNote 
+# python第一部分学习笔记
 ---
 ## 方法
 
@@ -29,3 +30,38 @@
 - 字典:字典中的表项是不排序的。 例如: spam = {'name':'Bob','age':18} 字典的三个方法(keys(),values(),items()): keys():返回的是键，是一个元组 values():返回的是值，是一个元组 items():返回的是嵌套式的元组 内层也是元组(包含键和值)
 
 - 字典的get()方法：检查改键是否存在于字典中，spam.get('name'，0) 若存在，返回该键的值，否则返回备用值(0)。
+
+## 字符串：
+- 双引号：使用双引号可以在字符串中使用单引号。
+- 转义字符：如果既想使用单引号，又想使用双引号，就需要用到转义字符。
+- 原始字符串：在引号前加上r，使它忽略所有转义字符。
+
+    ### 字符串的一些方法：
+
+    - upper()和lower()方法：分别将字符串转化为大写和小写；
+    - isupper()和islower()方法：判断字符串是否全是大写和小写；
+    - startswith()和endswith()方法:检查字符串开始和结束是否等于另一个字符串；
+    - join()方法：用于将字符串列表连接起来，返回一个字符串（针对列表）；
+       ```
+       >>>','.join(['cats','tats','bats'])
+       'cats,rats,bats'
+       >>> ' '.join(['My', 'name', 'is', 'Simon']) 
+       'My name is Simon' 
+       >>> 'ABC'.join(['My', 'name', 'is', 'Simon']) 
+       'MyABCnameABCisABCSimon' 
+       ```
+    - split()方法：用于将字符串转化为列表（针对字符串）
+        ```
+        >>> 'MyABCnameABCisABCSimon'.split('ABC')
+         ['My', 'name', 'is', 'Simon'] 
+         >>> 'My name is Simon'.split('m') 
+         ['My na', 'e is Si', 'on']
+        ```
+    - strip()、rstrip()和lstrip()方法：删除字符串两边的空白字符（空格、制表符和换行符）返回值是一个新的字符串。
+           
+    ### isX字符串方法：
+    - isalpha():判断是否全是字母；
+    - isalnum()：判断是否只包含字母和数字；
+    - isdecimal():判断是否只包含数字;
+    - isspace():判断是否只包含空格，制表符和换行；
+    - istitle():判断字符串是否仅包含以大写字母开头、后面都是小写字母的单词。
