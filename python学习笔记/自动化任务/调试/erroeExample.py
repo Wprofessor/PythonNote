@@ -1,5 +1,5 @@
 def spam():
-    bacon();
+    bacon()
 
 
 def bacon():
